@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <title>Daniel Asiamah's Portfolio</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <section id="about" class="hero">
+    <!-- Navigation -->
+    <nav>
+      <img class="logo" src="d.png" alt="daniels logo">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+    </nav>
+    <!-- Hero content -->
+    <div class="hero-text">
+      <h1><u>Daniel Asiamah</u></h1>
+      <p>Software | Web Developer</p>
+      <div class="button">About me</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <!-- About Daniel -->
+    <div class="info">
+      <h2><u>About Daniel</u></h2>
+      <p>Daniel, an inspiring young boy from London, who has been captivated by the mesmerizing world of technology. 
+        From a very young age, Daniel showed an innate curiosity and fascination with all things related to computers, gadgets, and innovation.
+        Born and raised in one of London's vibrant neighborhoods.</p>
+    </div>
+    <!-- Headshot -->
+    <div class="headshot">
+      <img src="Daniels.jpg">
+      <p> Daniel's journey into the tech world began when he saved up his money he made from Content creating 
+        on Youtube to build his first computer.
+        Instead of just using it for playing games and watching videos, 
+        he quickly delved into the intricacies of the machine, 
+        exploring its hardware and software components with an insatiable thirst for knowledge.</p>
+      <p>I've discovered that formal education is not the only path to success in this dynamic and ever-evolving field. I am a self-taught developer, 
+        eager to learn and adapt to the latest trends and technologies.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="sub">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <!-- Project 1 -->
+        <h3>Project 1 - Creating a Maths quiz game</h3>
+        <p>Daniel Asiamah's project website, he proudly presents his impressive achievement during his first year at university the creation of an engaging math quiz game using C++. 
+          This project showcases his passion for both mathematics and programming, as he combined these interests to develop an interactive and educational gaming experience.</p>
+        <div class="project-details">
+          <div class="project-images">
+            <img src="maths.png">
+            <img src="code.png">
+          </div>
+          <p>The provided C++ code is a simple math quiz game that generates five random math questions and allows the user to answer them. 
+            After answering the questions, the game displays a leaderboard showing the players' scores based on the number of correct answers they provided.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <!-- Project 2 -->
+        <h3>Project 2 - System analysis iSeek Management</h3>
+        <p>In this project, we followed the Systems Development Lifecycle (SDLC) to develop a systems proposal report. 
+          The project consisted of several stages, including planning, analysis, and design.
+           We worked progressively week by week, ensuring that we didn't leave everything for the last minute. </p>
+        <div class="project-images">
+          <img src="iseek.jpg">
+          <img src="table.jpg">
+          <img src="data.jpg">
+          <img src="requir.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="third">
+    <h2>Contact Me</h2>
+    <form action="send_email.php" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
